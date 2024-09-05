@@ -108,15 +108,15 @@ background: linear-gradient(103deg, rgba(9,9,121,1) 14%, rgba(0,212,255,1) 100%)
         <h5>Personal Details :</h5>
         <div class="mt-4 p-3 card border-0 shadow">
           <div class="d-flex align-items-center">
-            <i class="bi bi-envelope"></i>
-            <div class="flex-1">
+            <i class="bi col-2 bi-envelope"></i>
+            <div class="flex-1 col-10">
               <h6 class="text-primary mb-0">Email :</h6>
               <a class="text-muted text-decoration-none">{{ email }}</a>
             </div>
           </div>
           <div class="d-flex align-items-center mt-3">
-            <i class="bi bi-bookmark"></i>
-            <div class="flex-1">
+            <i class="bi col-2 bi-bookmark"></i>
+            <div class="flex-1 col-10">
               <h6 class="text-primary mb-0">Skills :</h6>
               <a class="text-muted text-decoration-none">html</a>, <a class="text-muted text-decoration-none">css</a>,
               <a class="text-muted text-decoration-none">js, ts</a>, <a
@@ -125,23 +125,23 @@ background: linear-gradient(103deg, rgba(9,9,121,1) 14%, rgba(0,212,255,1) 100%)
             </div>
           </div>
           <div class="d-flex align-items-center mt-3">
-            <i class="bi bi-globe"></i>
-            <div class="flex-1">
+            <i class="bi col-2 bi-globe"></i>
+            <div class="flex-1 col-10">
               <h6 class="text-primary mb-0">Language :</h6>
               <a class="text-muted text-decoration-none">Italian mother tongue</a>, <a
               class="text-muted text-decoration-none">average knowledge of English, spoken and written</a>
             </div>
           </div>
           <div class="d-flex align-items-center mt-3">
-            <i class="bi bi-cake2"></i>
-            <div class="flex-1">
+            <i class="bi col-2 bi-cake2"></i>
+            <div class="flex-1 col-10">
               <h6 class="text-primary mb-0">Birthday :</h6>
               <p class="text-muted mb-0 text-decoration-none">29nd May, 1998</p>
             </div>
           </div>
           <div class="d-flex align-items-center mt-3">
-            <i class="bi bi-geo"></i>
-            <div class="flex-1">
+            <i class="bi col-2 bi-geo"></i>
+            <div class="flex-1 col-10">
               <h6 class="text-primary mb-0">Location :</h6>
               <a class="text-muted text-decoration-none">Campobasso, Molise, Italy</a>
             </div>
@@ -276,45 +276,47 @@ background: linear-gradient(103deg, rgba(9,9,121,1) 14%, rgba(0,212,255,1) 100%)
     </div>
 </section>
 
-<section class="bg-home rtl-personal-hero bg-light d-flex align-items-center"
-         style="background:url('./book3.jpg') center; background-size: cover !important;">
-  <div class="bg-overlay d-grid">
-    <div class="container">
-      <div class="col-12">
-        <div class="title-heading">
-          <h2 class="heading text-white-50 m-2 justify-content-center d-flex mb-5">
-            Chronology of studies
-          </h2>
+<section class="bg-home rtl-personal-hero bg-light d-flex align-items-center" style="background: rgb(0,32,247);
+background: linear-gradient(150deg, rgba(0,32,247,1) 0%, rgba(20,120,163,1) 27%, rgba(255,255,255,1) 100%); height: -webkit-fill-available">
+  <div class="bg-overlay d-grid" style="position: unset">
+    <div class="p-5">
+      <div class="container">
+        <div class="col-12">
+          <div class="title-heading">
+            <h2 class="heading text-white-50 m-2 justify-content-center d-flex mb-5">
+              Chronology of studies
+            </h2>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-md-3 col-sm-12">
-          <div class="card shadow rounded border-0 overflow-hidden card-custom">
-            <img src="./Pilla.webp" style="height: 12rem; object-fit: cover" class="img-fluid" alt="">
-            <div class="card-body text-white-50">
-              <h5 class="card-title">Istituto di Istruzione Secondaria Superiore "Leopoldo Pilla"</h5>
-              <p>I followed the corporate information systems direction</p>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-4 col-sm-12">
+            <div class="card shadow rounded border-0 overflow-hidden card-custom my-2">
+              <img src="./Pilla.webp" style="height: 15rem; object-fit: cover" class="img-fluid" alt="">
+              <div class="card-body text-white-50" style="height: 12rem">
+                <h5 class="card-title">Istituto di Istruzione Secondaria Superiore "Leopoldo Pilla"</h5>
+                <p>I followed the corporate information systems direction</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="card shadow rounded border-0 overflow-hidden card-custom">
-            <img src="./pesche.jpeg" style="height: 12rem; object-fit: cover" class="img-fluid" alt="">
-            <div class="card-body text-white-50">
-              <h5 class="card-title">Università degli Studi del Molise</h5>
-              <p>I graduated from the faculty of computer science</p>
+          <div class="col-md-4 col-sm-12">
+            <div class="card shadow rounded border-0 overflow-hidden card-custom my-2">
+              <img src="./pesche.jpeg" style="height: 15rem; object-fit: cover" class="img-fluid" alt="">
+              <div class="card-body text-white-50" style="height: 12rem">
+                <h5 class="card-title">Università degli Studi del Molise</h5>
+                <p>I graduated from the faculty of computer science</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="card shadow rounded border-0 overflow-hidden card-custom">
-            <img src="./unicusano.jpg" style="height: 12rem; object-fit: cover" class="img-fluid" alt="">
-            <div class="card-body text-white-50">
-              <h5 class="card-title">Università Niccolò Cusano</h5>
-              <p>I am currently studying for a Master Data science: information & knowledge management for data
-                scientist</p>
+          <div class="col-md-4 col-sm-12">
+            <div class="card shadow rounded border-0 overflow-hidden card-custom my-2">
+              <img src="./unicusano.jpg" style="height: 15rem; object-fit: cover" class="img-fluid" alt="">
+              <div class="card-body text-white-50" style="height: 12rem">
+                <h5 class="card-title">Università Niccolò Cusano</h5>
+                <p>I am currently studying for a Master Data science: information & knowledge management for data
+                  scientist</p>
+              </div>
             </div>
           </div>
         </div>

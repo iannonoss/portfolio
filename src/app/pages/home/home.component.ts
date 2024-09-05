@@ -1,4 +1,4 @@
-import {Component, ElementRef, ViewChild} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {NgxTypedJsModule} from "ngx-typed-js";
 
 ;
@@ -12,9 +12,14 @@ import {NgxTypedJsModule} from "ngx-typed-js";
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   @ViewChild('portfolio') portfolio!: ElementRef;
   public email: string = 'iannonemattia7@gmail.com';
+  public responsiveOn: boolean | undefined;
+
+  ngOnInit(): void {
+    this.responsiveOn = window?.innerWidth >= 768;
+  }
 
   viewPortfolio() {
     this.portfolio.nativeElement.scrollIntoView({ behavior: 'smooth' });
