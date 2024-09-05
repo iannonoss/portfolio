@@ -1,0 +1,325 @@
+<div style="background: rgb(9,9,121);
+background: linear-gradient(103deg, rgba(9,9,121,1) 14%, rgba(0,212,255,1) 100%);">
+  <section class="bg-home rtl-personal-hero bg-light d-flex align-items-center"
+           style="background:url('./foto_portfolio.png') bottom right" id="home">
+    <div class="bg-overlay">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 col-md-9 p-4">
+            <div class="title-heading mt-4">
+              <h1 class="display-3 fw-bold mb-3 text-white-50">Here I'm <br>
+                <ngx-typed-js [strings]="['Mattia Iannone', 'Front-End Developer', 'Developer']" [shuffle]="true"
+                              [typeSpeed]="80" [loop]="true">
+                  <span class="element typing text-primary"></span>
+                </ngx-typed-js>
+              </h1>
+              <p class="para-desc text-white-50">Hi, I’m Mattia Iannone, a developer with an immense curiosity and
+                dedication to learning. I like to immerse myself in the world of software development with
+                enthusiasm. In the future, I plan to perfect my skills. I hope to share something important with
+                you! 😊🚀</p>
+              <div class="mt-4 pt-2">
+                <a class="btn btn-primary mt-2 me-2" (click)="viewPortfolio()"><i class="uil uil-camera"></i>
+                  View
+                  Portfolio</a>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+    </div>
+  </section>
+</div>
+
+<!--<div>
+  <section class="bg-home rtl-personal-hero bg-light d-flex align-items-end"
+           style="background:url('./portfolioWeb.jpg') center center" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-md-4 p-4">
+            <div class="title-heading align-items-center justify-content-center d-flex padding-bottom-d">
+             &lt;!&ndash; <h1 class="display-3 fw-bold mb-3 text-white-50">Here I'm <br>
+                <ngx-typed-js [strings]="['Mattia Iannone', 'Front-End Developer', 'Developer']" [shuffle]="true"
+                              [typeSpeed]="80" [loop]="true">
+                  <span class="element typing text-primary"></span>
+                </ngx-typed-js>
+              </h1>
+              <p class="para-desc text-white-50">Hi, I’m Mattia Iannone, a developer with an immense curiosity and
+                dedication to learning. I like to immerse myself in the world of software development with
+                enthusiasm. In the future, I plan to perfect my skills. I hope to share something important with
+                you! 😊🚀</p>&ndash;&gt;
+                <a class="btn btn-custom" (click)="viewPortfolio()"><i class="uil uil-camera"></i>
+                  View
+                  Portfolio</a>
+            </div>
+          </div>
+          &lt;!&ndash;end col&ndash;&gt;
+        </div>
+        &lt;!&ndash;end row&ndash;&gt;
+      </div>
+  </section>
+</div>-->
+
+<section class="section" style="background-color: #d3d3d333">
+  <div class="container">
+    <div class="col-lg-12">
+      <div class="card public-profile border-0 rounded shadow" style="z-index: 1;">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-lg-2 col-md-3 text-md-start text-center" #portfolio>
+              <img src="./img_1.png" class="avatar avatar-large rounded-circle shadow d-block mx-auto"
+                   alt="">
+            </div>
+            <!--end col-->
+
+            <div class="col-lg-10 col-md-9">
+              <div class="row align-items-end">
+                <div class="col-md-7 text-md-start text-center mt-4 mt-sm-0">
+                  <h3 class="title mb-0">Mattia Iannone</h3>
+                  <small class="text-muted h6 me-2">Front-End developer</small>
+                  <ul class="list-inline mb-0 mt-3">
+                    <li class="list-inline-item me-2"><a href="https://www.instagram.com/iannonss/" class="text-muted"
+                                                         title="Instagram">
+                      <i class="bi bi-instagram"></i>iannonss
+                    </a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/mattia-iannone-9105b025b/"
+                                                    class="text-muted" title="Linkedin">
+                      <i class="bi bi-linkedin"></i>Mattia Iannone
+                    </a></li>
+                    <li class="list-inline-item"><a href="https://github.com/iannonoss" class="text-muted"
+                                                    title="GitHub">
+                      <i class="bi bi-github"></i>iannonoss
+                    </a></li>
+                    <li class="list-inline-item"><a href="https://gitlab.com/IannoneM" class="text-muted"
+                                                    title="GitHub">
+                      <i class="bi bi-gitlab"></i>IannoneM
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mt-4">
+        <h5>Personal Details :</h5>
+        <div class="mt-4 p-3 card border-0 shadow">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-envelope"></i>
+            <div class="flex-1">
+              <h6 class="text-primary mb-0">Email :</h6>
+              <a class="text-muted text-decoration-none">{{ email }}</a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-3">
+            <i class="bi bi-bookmark"></i>
+            <div class="flex-1">
+              <h6 class="text-primary mb-0">Skills :</h6>
+              <a class="text-muted text-decoration-none">html</a>, <a class="text-muted text-decoration-none">css</a>,
+              <a class="text-muted text-decoration-none">js, ts</a>, <a
+              class="text-muted text-decoration-none">Angular</a>,
+              <a class="text-muted text-decoration-none">& a good listener 🌈</a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-3">
+            <i class="bi bi-globe"></i>
+            <div class="flex-1">
+              <h6 class="text-primary mb-0">Language :</h6>
+              <a class="text-muted text-decoration-none">Italian mother tongue</a>, <a
+              class="text-muted text-decoration-none">average knowledge of English, spoken and written</a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-3">
+            <i class="bi bi-cake2"></i>
+            <div class="flex-1">
+              <h6 class="text-primary mb-0">Birthday :</h6>
+              <p class="text-muted mb-0 text-decoration-none">29nd May, 1998</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-3">
+            <i class="bi bi-geo"></i>
+            <div class="flex-1">
+              <h6 class="text-primary mb-0">Location :</h6>
+              <a class="text-muted text-decoration-none">Campobasso, Molise, Italy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 pt-2 pt-sm-0">
+        <h5>Experience :</h5>
+        <div class="d-flex key-feature align-items-center p-3 rounded shadow mt-4 bg-white">
+          <img src="./razzo_democom_1000px.png" class="avatar avatar-ex-sm" alt="">
+          <div class="flex-1 content ms-3">
+            <h4 class="title mb-0">Front-end Developer</h4>
+            <p class="text-muted mb-0">2 Years Experience</p>
+            <p class="text-muted mb-0"><a href="https://www.democom.it/" class="text-primary">Democom srl</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="section-title">
+          <h4 class="title">About Me</h4>
+          <h6 class="text-primary mb-4">I'm passionate front-end developer</h6>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active d-flex align-items-center" id="ita-tab" data-bs-toggle="tab" data-bs-target="#ita" type="button"
+                      role="tab" aria-controls="ita" aria-selected="true">ITA
+                <img src="./it.svg" class="img-fluid ms-1" width="20" height="20">
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link d-flex align-items-center" id="eng-tab" data-bs-toggle="tab" data-bs-target="#eng" type="button" role="tab"
+                      aria-controls="eng" aria-selected="false">ENG
+                <img src="./gb.svg" class="img-fluid ms-1" width="20" height="20">
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="ita" role="tabpanel" aria-labelledby="ita-tab">
+              <p class="text-muted p-2">Fin dalle scuole superiori, ho scoperto la mia passione per la programmazione.
+                Grazie all'istituto secondario superiore, ho intrapreso i miei primi passi nel mondo del codice,
+                iniziando con linguaggi come C, HTML e PHP.
+                Questo interesse si è trasformato in una vera e propria vocazione, che mi ha spinto a proseguire i miei
+                studi presso la facoltà di Informatica. Dopo aver conseguito la laurea, ho avuto l'opportunità di
+                mettere in pratica le competenze acquisite, trovando lavoro già negli ultimi mesi del mio percorso
+                universitario.
+                Da due anni, lavoro come sviluppatore front-end, specializzandomi in Angular, e quando possibile,
+                sviluppo skills secondarie utili per l'albiente lavorativo in cui opero. Affronto tutti i giorni nuove
+                sfide di sviluppo con voglia e dedizione ed ho una grande voglia di crescere e di scoprire nuovi
+                approcci e nuovi sviluppi dell'informatica e dello sviluppo.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="eng" role="tabpanel" aria-labelledby="eng-tab">
+              <p class="text-muted p-2">Since high school, I discovered my passion for programming.
+                Thanks to secondary school, I took my first steps in the world of code, starting with languages ​​such
+                as C, HTML and PHP. This interest turned into a real vocation, which pushed me to continue my studies at
+                the Faculty of Computer Science. After graduating, I had the opportunity to put into practice the skills
+                acquired, finding work already in the last months of my university career. For two years, I have been
+                working as a front-end developer, specializing in Angular, and when possible, I develop secondary skills
+                useful for the work environment in which I operate.
+                I face new development challenges every day with desire and dedication and I have a great desire to grow
+                and discover new approaches and new developments in computer science and development.
+              </p>
+            </div>
+            <div class="mt-4">
+              <a class="btn btn-primary mouse-down" href="mailto:iannonemattia7@gmail.com"><i class="mdi mdi-phone"></i>
+                Contact
+                Me</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <div class="ms-md-4">
+            <div class="progress-box">
+              <h6 class="title text-muted">C</h6>
+              <div class="progress">
+                <div class="progress-bar position-relative bg-primary" style="width:60%;">
+                </div>
+              </div>
+            </div>
+            <div class="progress-box mt-4">
+              <h6 class="title text-muted">MYSQL</h6>
+              <div class="progress">
+                <div class="progress-bar position-relative bg-primary" style="width:50%;">
+                </div>
+              </div>
+            </div>
+            <div class="progress-box mt-4">
+              <h6 class="title text-muted">Angular / TypeScript / JavaScript</h6>
+              <div class="progress">
+                <div class="progress-bar position-relative bg-primary" style="width:75%;">
+                </div>
+              </div>
+            </div>
+            <div class="progress-box mt-4">
+              <h6 class="title text-muted">Java</h6>
+              <div class="progress">
+                <div class="progress-bar position-relative bg-primary" style="width:55%;">
+                </div>
+              </div>
+            </div>
+            <div class="progress-box mt-4">
+              <h6 class="title text-muted">HTML</h6>
+              <div class="progress">
+                <div class="progress-bar position-relative bg-primary" style="width:80%;">
+                </div>
+              </div>
+            </div>
+            <div class="progress-box mt-4">
+              <h6 class="title text-muted">CSS</h6>
+              <div class="progress">
+                <div class="progress-bar position-relative bg-primary" style="width:75%;">
+                </div>
+              </div>
+            </div>
+            <div class="progress-box mt-4">
+              <h6 class="title text-muted">Docker</h6>
+              <div class="progress">
+                <div class="progress-bar position-relative bg-primary" style="width:30%;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="bg-home rtl-personal-hero bg-light d-flex align-items-center"
+         style="background:url('./book3.jpg') center; background-size: cover !important;">
+  <div class="bg-overlay d-grid">
+    <div class="container">
+      <div class="col-12">
+        <div class="title-heading">
+          <h2 class="heading text-white-50 m-2 justify-content-center d-flex mb-5">
+            Chronology of studies
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-3 col-sm-12">
+          <div class="card shadow rounded border-0 overflow-hidden card-custom">
+            <img src="./Pilla.webp" style="height: 12rem; object-fit: cover" class="img-fluid" alt="">
+            <div class="card-body text-white-50">
+              <h5 class="card-title">Istituto di Istruzione Secondaria Superiore "Leopoldo Pilla"</h5>
+              <p>I followed the corporate information systems direction</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <div class="card shadow rounded border-0 overflow-hidden card-custom">
+            <img src="./pesche.jpeg" style="height: 12rem; object-fit: cover" class="img-fluid" alt="">
+            <div class="card-body text-white-50">
+              <h5 class="card-title">Università degli Studi del Molise</h5>
+              <p>I graduated from the faculty of computer science</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <div class="card shadow rounded border-0 overflow-hidden card-custom">
+            <img src="./unicusano.jpg" style="height: 12rem; object-fit: cover" class="img-fluid" alt="">
+            <div class="card-body text-white-50">
+              <h5 class="card-title">Università Niccolò Cusano</h5>
+              <p>I am currently studying for a Master Data science: information & knowledge management for data
+                scientist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

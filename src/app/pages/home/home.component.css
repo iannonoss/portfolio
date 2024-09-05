@@ -1,0 +1,194 @@
+.bg-home {
+  height: 100vh;
+  -ms-flex-item-align: center;
+  align-self: center;
+  position: relative;
+  background-position: right;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-color: transparent !important;
+}
+
+.btn-custom {
+  background-color: #3D6A96;
+  color: white;
+  &:hover, &:active {
+    background-color: white;
+    color: #3D6A96;
+    border: solid 1px #3D6A96;
+  }
+}
+
+.padding-bottom-d {
+  padding-bottom: 15vh;
+}
+
+.section {
+  padding: 50px 0;
+  position: relative;
+}
+
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: #e9ecef;
+  border-radius: .25rem;
+}
+
+.progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #2f55d4;
+  -webkit-transition: width .6s ease;
+  transition: width .6s ease;
+}
+
+.progress-box .title {
+  font-size: 15px;
+}
+
+.progress-box .progress {
+  height: 8px;
+  overflow: visible;
+  background: #e9ecef;
+}
+
+.progress-box .progress .progress-bar {
+  border-radius: 6px;
+  -webkit-animation: animate-positive 3s;
+  animation: animate-positive 3s;
+  overflow: visible !important;
+}
+
+.progress-box .progress .progress-value {
+  position: absolute;
+  top: -32px;
+  left: -15px;
+  font-size: 13px;
+}
+
+.progress-box .progress .progress-bar {
+  border-radius: 6px;
+  -webkit-animation: animate-positive 3s;
+  animation: animate-positive 3s;
+  overflow: visible !important;
+}
+
+.avatar.avatar-ex-sm {
+  max-height: 25px;
+}
+
+.rounded {
+  border-radius: 6px !important;
+}
+
+.avatar.avatar-large {
+  height: 140px;
+  width: 140px;
+  object-fit: contain;
+  background-color: darkslategray;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.bi {
+  display: inline-block;
+  vertical-align: -.125em;
+  fill: currentcolor;
+  color: lightgray;
+  height: 2rem;
+  width: 2rem;
+}
+
+.bg-overlay {
+  background-color: rgba(60, 72, 88, .7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.text-white-50 {
+  --bs-text-opacity: 1;
+  color: rgba(255, 255, 255, .5) !important;
+}
+
+.gallery-col {
+  top: 0px;
+  visibility: visible;
+  will-change: transform;
+  left: 0px;
+  opacity: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform, opacity;
+}
+
+.work-container.work-grid:hover {
+  -webkit-box-shadow: 0 0 3px rgba(60, 72, 88, .15);
+  box-shadow: 0 0 3px rgba(60, 72, 88, .15);
+}
+
+.work-container.work-grid img {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.tobii-zoom img {
+  display: block;
+}
+
+
+.work-container.work-creative:hover .content, .work-container.work-grid:hover .content {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.work-container.work-creative .content, .work-container.work-grid .content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transform: translateY(150px);
+  transform: translateY(150px);
+  overflow: hidden;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 1;
+}
+
+.work-container.work-grid .content {
+  background-color: #fff;
+}
+
+.card-custom {
+  background-color: #ffffff00;
+  backdrop-filter: blur(5px);
+}
+
+.title-heading .heading {
+  font-size: 45px;
+}
