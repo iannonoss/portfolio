@@ -7,8 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "after updtes deploy": "ng build --output-path docs --base-href /portfolio/",
-//    remembre to move browser folder
+    "after updtes deploy": "ng build --output-path docs --base-href /portfolio/"
   },
   "private": true,
   "dependencies": {
