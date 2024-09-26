@@ -1,5 +1,27 @@
 .bg-home {
+  min-height: 100vh;
+  -ms-flex-item-align: center;
+  align-self: center;
+  position: relative;
+  background-position: right;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-color: transparent !important;
+}
+
+bg-study {
   height: 100vh;
+  -ms-flex-item-align: center;
+  align-self: center;
+  position: relative;
+  background-position: right;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-color: transparent !important;
+}
+
+.bg-events {
+  min-height: 100vh;
   -ms-flex-item-align: center;
   align-self: center;
   position: relative;
@@ -192,3 +214,14 @@
 .title-heading .heading {
   font-size: 45px;
 }
+
+.fadein img{
+  opacity:1;
+  transition: 1s ease;
+}
+
+.fadein img:hover{
+  opacity:0.5;
+  transition: 1s ease;
+}
+

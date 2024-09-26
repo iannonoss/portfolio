@@ -1,0 +1,13 @@
+.ui-accordion-content-wrapper-overflown {
+  overflow: hidden;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link {
+    border: none;
+    box-shadow: var(--bs-box-shadow) !important;
+}
+
+.p-accordion .p-accordion-content {
+  border: none;
+  box-shadow: var(--bs-box-shadow) !important;
+}
