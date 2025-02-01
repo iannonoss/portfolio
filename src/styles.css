@@ -1,3 +1,69 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --button-bg: #f8f9fa;
+  --button-border: #6c757d;
+  --offcanvas-bg: #ffffff;
+}
+
+.dark-theme {
+  --background-color: #1B2836; /* Sfondo principale */
+  --text-color: #E5E9F0; /* Testo chiaro */
+  --button-bg: #3A506B; /* Sfondo pulsante */
+  --button-border: #7289A6; /* Bordo pulsante */
+  --offcanvas-bg: #22344C; /* Sfondo offcanvas */
+  --link-color: #79A8D1; /* Colore link o accenti */
+  --hover-bg: #4F6D8A; /* Sfondo hover */
+
+  p {
+    color: var(--text-color);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color) !important;
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--text-color);
+    background-color: var(--hover-bg);
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+button.btn {
+  background-color: var(--button-bg);
+  border-color: var(--button-border);
+  color: var(--text-color);
+}
+
+button.btn:hover {
+  background-color: var(--hover-bg);
+}
+
+.offcanvas {
+  background-color: var(--offcanvas-bg);
+  color: var(--text-color);
+}
+
+.offcanvas a {
+  color: var(--link-color);
+}
+
+.offcanvas a:hover {
+  color: var(--text-color);
+  background-color: var(--hover-bg);
+}
+
+
 .ui-accordion-content-wrapper-overflown {
   overflow: hidden;
 }
@@ -10,4 +76,35 @@
 .p-accordion .p-accordion-content {
   border: none;
   box-shadow: var(--bs-box-shadow) !important;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+
+.p-chip .p-chip-text {
+  @media (max-width: 576px) {
+    font-size: xx-small !important;
+  }
+
+  /* 📱 Tablet: 577px - 768px */
+  @media (min-width: 577px) and (max-width: 768px) {
+    font-size: xx-small !important;
+  }
+
+  /* 💻 Laptop: 769px - 1024px */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    font-size: x-small !important;
+  }
+
+  /* 🖥️ Desktop: 1025px - 1440px */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    font-size: small !important;
+  }
+
+  /* 📺 Schermi Grandi: sopra 1441px */
+  @media (min-width: 1441px) {
+    font-size: large !important;
+  }
 }

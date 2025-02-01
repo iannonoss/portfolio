@@ -1,23 +1,16 @@
-<section class="p-4 text-center w-100">
-  <!-- Gallery -->
-  <div class="row">
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-      <img src="./devFest/IMG_7254.png" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water">
-
-      <img src="./devFest/IMG_7273.png" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape">
-    </div>
-
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img src="./devFest/IMG_7266.png" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds">
-
-      <img src="./devFest/IMG_7271.png" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water">
-    </div>
-
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img src="./devFest/IMG_7257.png" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea">
-
-      <img src="./devFest/mattiaTalk.jpeg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park">
+<section class="card border-0 scrollable-gallery shadow" style="background: transparent;
+    backdrop-filter: blur(10px);">
+  <div class="gallery-container justify-content-between d-flex">
+    <div class="gallery-item" *ngFor="let photo of images" (click)="openLightbox(photo)">
+      <img [src]="photo.src" [alt]="photo.alt" class="gallery-image" />
     </div>
   </div>
-  <!-- Gallery -->
+
+  <!-- Lightbox Modal -->
+  <div *ngIf="lightboxOpen" class="lightbox" (click)="closeLightbox()">
+    <div class="lightbox-content" (click)="$event.stopPropagation()">
+      <img [src]="selectedPhoto?.src" [alt]="selectedPhoto?.alt" class="lightbox-image" />
+      <button class="close-btn" (click)="closeLightbox()">✕</button>
+    </div>
+  </div>
 </section>

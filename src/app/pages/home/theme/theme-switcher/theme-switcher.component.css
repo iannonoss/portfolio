@@ -1,0 +1,13 @@
+.form-check.form-switch {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important; /* Spaziatura tra gli elementi */
+}
+
+.form-check-label {
+  margin: 0 !important; /* Rimuove margini predefiniti */
+}
+
+.form-check-input {
+  margin: 0 !important; /* Rimuove margini predefiniti */
+}
