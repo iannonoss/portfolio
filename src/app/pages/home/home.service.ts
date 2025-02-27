@@ -11,6 +11,6 @@ export class HomeService {
   constructor(private http: HttpClient) { }
 
   public getEvents(): Observable<Events> {
-    return this.http.get<Events>(`/json/events.json`);
+    return this.http.get<Events>(`/portfolio/json/events.json`);
   }
 }
