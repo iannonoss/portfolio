@@ -1,0 +1,86 @@
+{
+  "events": [
+    {
+      "card": {
+        "image": {
+          "src": "./devFest/mattiaTalk.jpeg",
+          "alt": "DevFest",
+          "title": "DevFest 2024 Campobasso"
+        },
+        "title": "Turbocharge Your Web Performance: Faster Bundles, Smoother Rendering, and Best Practices - Angular",
+        "text": {
+          "content_it": "Il talk ha evidenziato l'importanza di ottimizzare il proprio progetto per migliorare le prestazioni web, specialmente in un contesto di siti e-commerce, dove la velocità incide sulla fedeltà e le opinioni degli utenti. Sono state presentate tecniche di ottimizzazione del bundle e delle performance web utilizzando il framework Angular e mettendo in pratica come lazy loading, code splitting, defer e preloading strategies. Inoltre, sono stati spiegati strumenti per analizzare le prestazioni come il Coverage Panel, Lighthouse e il treeMap chart. Infine, i risultati hanno mostrato miglioramenti significativi, con esempi concreti di ottimizzazioni che hanno accelerato il caricamento e l'interazione del sito.",
+          "content_en": "The talk highlighted the importance of optimizing your project to improve web performance, especially in an e-commerce site context where speed affects user loyalty and opinions. Techniques for bundle optimization and web performance were presented using the Angular framework and putting into practice such as lazy loading, code splitting, defer and preloading strategies. In addition, performance analysis tools such as the Coverage Panel, Lighthouse and treeMap chart were explained. Finally, the results showed significant improvements, with concrete examples of optimizations that have accelerated the loading and interaction of the site."
+        },
+        "buttons": [
+          {
+            "label": "Visualizza presentazione",
+            "href": "./devFest/Talk - GDG - Mattia, Nicola & Chiara..pdf"
+          }
+        ],
+        "footerChips": [
+          {
+            "label": "Talk",
+            "icon": "bi bi-megaphone"
+          },
+          {
+            "label": "Google Developer Groups - Fest",
+            "icon": "bi bi-google"
+          }
+        ]
+      },
+      "photo": [
+        {
+          "src": "./devFest/IMG_7254.png",
+          "alt": "Boat on Calm Water"
+        },
+        {
+          "src": "./devFest/IMG_7273.png",
+          "alt": "Wintry Mountain Landscape"
+        },
+        {
+          "src": "./devFest/IMG_7266.png",
+          "alt": "Mountains in the Clouds"
+        },
+        {
+          "src": "./devFest/IMG_7271.png",
+          "alt": "Boat on Calm Water"
+        },
+        {
+          "src": "./devFest/IMG_7257.png",
+          "alt": "Waves at Sea"
+        },
+        {
+          "src": "./devFest/mattiaTalk.jpeg",
+          "alt": "Yosemite National Park"
+        }
+      ]
+    },
+    {
+      "card": {
+        "image": {
+          "src": "./Pescara/biglietto.jpeg",
+          "alt": "DevFest",
+          "title": "DevFest 2024 Pescara"
+        },
+        "title": "DevFest 2024 Pescara - Back to the Future!",
+        "text": {
+          "content_it": "Come ogni anno, il DevFest di Pescara ha regalato grandi emozioni, e questa volta il tema era \"Ritorno al Futuro\". In una giornata ricca di nuove conoscenze e interazioni, non sono mancati gli approfondimenti su nuove tecnologie, aggiornamenti sui framework front-end, le novità di Angular 19, concetti di data science e una migliore comprensione degli sviluppi dell’intelligenza artificiale. Non vedo l’ora che arrivi l'evento del 2025!",
+          "content_en": "As every year, the DevFest in Pescara delivered great excitement, and this time the theme was \"Back to the Future.\" In a day full of new knowledge and interactions, there was no shortage of deep dives into new technologies, updates on front-end frameworks, the latest features of Angular 19, insights into data science, and a better understanding of the advancements in artificial intelligence. I can’t wait for the event of 2025!"
+        },
+        "buttons": [],
+        "footerChips": [
+          {
+            "label": "Viewer",
+            "icon": "bi bi-eye"
+          },
+          {
+            "label": "Google Developer Groups - Fest",
+            "icon": "bi bi-google"
+          }
+        ]
+      },
+      "photo": []
+    }
+  ]
+}

@@ -286,12 +286,12 @@ ul.timeline > li:before {
 
 .fixed-button {
   position: fixed;
-  top: 10px; /* Distanza dal bordo superiore */
-  left: 10px; /* Distanza dal bordo sinistro */
-  z-index: 1000; /* Assicurati che sia sopra altri elementi */
-  border-radius: 5px; /* Bordi arrotondati */
-  cursor: pointer; /* Cambia il cursore al passaggio */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effetto ombra */
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .fixed-button:hover {
@@ -303,12 +303,10 @@ ul.timeline > li:before {
 }
 
 .responsive-display {
-  /* 🌟 Mobile: max 576px */
   @media (max-width: 576px) {
     display: contents;
   }
 
-  /* 📱 Tablet: 577px - 768px */
   @media (min-width: 577px) and (max-width: 768px) {
     display: contents;
     .p-chip .p-chip-text {
@@ -316,17 +314,14 @@ ul.timeline > li:before {
     }
   }
 
-  /* 💻 Laptop: 769px - 1024px */
   @media (min-width: 769px) and (max-width: 1024px) {
     display: flex;
   }
 
-  /* 🖥️ Desktop: 1025px - 1440px */
   @media (min-width: 1025px) and (max-width: 1440px) {
     display: flex;
   }
 
-  /* 📺 Schermi Grandi: sopra 1441px */
   @media (min-width: 1441px) {
     display: flex;
   }
@@ -338,22 +333,18 @@ ul.timeline > li:before {
     font-size: xx-small !important;
   }
 
-  /* 📱 Tablet: 577px - 768px */
   @media (min-width: 577px) and (max-width: 768px) {
     font-size: xx-small !important;
   }
 
-  /* 💻 Laptop: 769px - 1024px */
   @media (min-width: 769px) and (max-width: 1024px) {
     font-size: x-small !important;
   }
 
-  /* 🖥️ Desktop: 1025px - 1440px */
   @media (min-width: 1025px) and (max-width: 1440px) {
     font-size: small !important;
   }
 
-  /* 📺 Schermi Grandi: sopra 1441px */
   @media (min-width: 1441px) {
     font-size: large !important;
   }
